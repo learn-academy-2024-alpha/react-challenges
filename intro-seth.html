@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url('img/space.jpg');
+            background-repeat: no-repeat;
+            color: red;
+        }
+    
+        h1 {
+            display: inline;
+            padding: 0px;
+            text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="react-container"></div>
+    
+    <script type="text/babel">
+      const App = () => {
+        return (
+        <>
+        <h1>Whats Good Alpha Cohort!</h1>
+        <ClassNames />
+        <Foot />
+        </>
+        )
+      }
+
+      const ClassNames = () => {
+        return (
+        <>
+        <h3>Names in my cohort:</h3>
+        <ul>
+            <li>Mark</li>
+            <li>Judas</li>
+            <li>Matt</li>
+            <li>Ryan</li>
+            <li>Morgan</li>
+            <li>Luis</li>
+            <li>Rashad</li>
+            <li>Shawn</li>
+        </ul>
+        </>
+        )
+      }
+
+      const Foot = () => {
+        return (
+            <>
+            <h1>Seth</h1>
+            </>
+        )
+      }
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
