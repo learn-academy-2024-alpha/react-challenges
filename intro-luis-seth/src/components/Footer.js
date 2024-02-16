@@ -1,3 +1,4 @@
+// Cannot use footer without freezing computer
 const Footer = () => {
     
 return (
