@@ -2,12 +2,13 @@
 const Profile = () => {
     return (
         <>
+        <h2>About Us</h2>
             <ul>
                 <li>Name: Morgan Smith</li>
                 <li>Birthday: 4/13/1998</li>
                 <li>Hobbies: boba and chess enthusiast</li>
-                <li>Fun fact: </li>
-                <li>Favorite quote: </li>
+                <li>Fun fact: Fine Jewelery craftswoman </li>
+                <li>Favorite quote: "The only true wisdom is in knowing you know nothing." –Socrates </li>
             </ul>
             <ul>
                 <li>Name: Ryan Lemus</li>
