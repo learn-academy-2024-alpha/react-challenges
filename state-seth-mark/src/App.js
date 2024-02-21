@@ -1,5 +1,6 @@
 import BoxColor from './components/BoxColor'; 
 import './App.css';
+import BorderVisible from './components/BorderVisible';
 
 function App() {
   return (
@@ -8,6 +9,13 @@ function App() {
     <BoxColor />
     <BoxColor />
     <BoxColor />
+    <BorderVisible />
+
+    
+
+    <button>Add Box</button>
+
+    <button>Remove Box</button>
 
 
 
@@ -18,5 +26,7 @@ function App() {
    
   );
 }
+
+
 
 export default App;
