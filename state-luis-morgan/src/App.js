@@ -1,19 +1,24 @@
 import Box from "./Components/Box"
-import Buttons from '../src/Components/Buttons';
+import AddButton from './Components/AddButton';
+import RemoveButton from "./Components/RemoveButton";
 import { useState } from "react";
 const App = () =>{
   const [box, setBox] = useState(0) 
+  const onAdd = () =>{
+    setBox(box + 1)
+  }
+  const onRemove = () =>{
+    setBox(box - 1)
+  }
 
 
   return (
     <>
-    <Buttons />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
+    <AddButton onClick={onAdd}/>
+    <RemoveButton onClick={onRemove}/>
+    {[...Array(box)].map((_, index)=> {
+      <Box key={index}/>
+    })}
     </>
   )
 }
