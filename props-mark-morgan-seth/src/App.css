@@ -2,3 +2,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+.roll-log-parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.num-parent {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+li {
+  list-style: none;
+}

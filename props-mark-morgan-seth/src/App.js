@@ -10,15 +10,7 @@ const App = () => {
 
   const handleDiceClick = () => {
     const num = Math.floor(Math.random() * (6 - 1 + 1)) + 1
-    setDiceRollNum(num)
     setCurrentRoll([...currentRoll, num])
-    rollList(currentRoll)
-  }
-
-  const rollList = (updatedArr) => {
-    return updatedArr.map(num => {
-      return num
-    })
   }
 
   return (

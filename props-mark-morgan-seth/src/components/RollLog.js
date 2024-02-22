@@ -5,8 +5,14 @@ console.log(props)
 
   return (
     <>
+    <div className='roll-log-parent'>
         <div>RollLog</div>
-        <p>{props.currentRoll}</p>
+        <ul className='num-parent'>
+            {props.currentRoll.map(num => {
+                return <li>{num}</li>
+            })}
+        </ul>
+    </div>
     </>
   )
 }
