@@ -7,7 +7,15 @@ const SquareBox = (props) => {
         <div onClick={props.nextNumber} className="box">
         <h3>Your Roll: {props.currentNumber}
         </h3>
-        </div>
+        <div>
+       <h4> Roll log </h4> 
+       <ul> 
+        {props.rollLog.map((roll, index) =>(
+            <li key={index} >{roll}</li>
+            ))}
+        </ul>
+            </div>
+            </div>
     )
 }
 
