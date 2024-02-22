@@ -6,7 +6,7 @@ console.log(props)
   return (
     <>
     <div className='roll-log-parent'>
-        <div>RollLog</div>
+        <div className='roll-title'>RollLog</div>
         <ul className='num-parent'>
             {props.currentRoll.map(num => {
                 return <li>{num}</li>
