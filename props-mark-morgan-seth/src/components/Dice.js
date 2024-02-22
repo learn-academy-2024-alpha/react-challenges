@@ -4,7 +4,14 @@ const Dice = (props) => {
 
   return (
     <>
-        <button onClick={props.handleDiceClick}>Roll Dice</button>
+    <div>
+        <div>
+            <button onClick={props.handleDiceClick}>Roll Dice</button>
+        </div>
+        <div>
+        <   img className='dice-img' src={props.diceImage} alt="" />
+        </div>
+    </div>
     </>
   )
 }
