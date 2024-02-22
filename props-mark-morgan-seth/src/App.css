@@ -21,3 +21,20 @@ body {
 li {
   list-style: none;
 }
+
+
+button {
+  max-height: 10dvh;
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 50px;
+}

@@ -15,11 +15,22 @@ const App = () => {
 
   return (
     <>
+    <div className='page-wrapper'>
+    <div className='header'>
+      <h1>Rolling On Props</h1> 
+    </div>
+  <div className='parent-container'>
     <div className='parent-container'>
       <Dice handleDiceClick={handleDiceClick} />
+    </div>
+
+    <div className='parent-container'>
       <RollLog diceRollNum={diceRollNum} currentRoll={currentRoll} />
     </div>
-    </>
+    
+  </div>
+  </div>
+  </>
   )
 }
 
