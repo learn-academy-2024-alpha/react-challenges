@@ -2,6 +2,9 @@
   border: 2px solid black;
   height: 400px;
   width: 300px;
+  max-width: 300px;
+  max-height: 400px;
+  list-style: inside;
 }
 
 .dice {
@@ -15,3 +18,46 @@
   flex-wrap: wrap;
   background-color: white;
 } */
+
+.muldice {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.rolldice {
+  max-height:25px ;
+  max-width:25px ;
+}
+
+/* .roll-log {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+li {
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* position: fixed; */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+  /* display: inline; */
+}
+
+.morgan {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 200px;
+  overflow-y: none;
+  word-wrap: break-word;
+  max-width: 300px;
+  max-height: 200px;
+  bottom: 0px;
+  
+}
