@@ -1,0 +1,16 @@
+.box-border {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+
+.add {
+  border: 2px solid blueviolet
+ 
+  ;
+}
+
+.remove {
+  border: 2px solid blueviolet;
+}
