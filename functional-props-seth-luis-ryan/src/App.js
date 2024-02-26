@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Menu from './Components/Menu'
+import Counter from './Components/Counter'
 
 
 const App = () => {
@@ -23,8 +24,8 @@ const App = () => {
       <h1>React BBQ</h1>
       {menuItems.map((menu, index) => {
         return (
-          <Menu menu={menu} key={index} />
-
+          <Menu menu={menu} key={index}  />
+          
         )
       })}
     </>
