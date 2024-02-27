@@ -5,7 +5,7 @@ const BadRobot = (props) => {
         let emptyString = '';
         const BLA = ['B', 'L', 'A'];
         for (let i = 0; i < input.length; i++) {
-            emptyString += BLA[i % 3];
+            emptyString += BLA[i % BLA.length];
           }
         
         return emptyString;
