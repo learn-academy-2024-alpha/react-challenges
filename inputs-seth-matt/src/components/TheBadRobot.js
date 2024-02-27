@@ -17,7 +17,7 @@ const TheBadRobot = (props) => {
   return (
     <div>
       I hear you saying {letterChanger(props.userInput)}. Is that correct?
-      <hr></hr>
+
     </div>
   )
 }

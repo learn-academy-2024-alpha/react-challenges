@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import TheGoodRobot from './components/TheGoodRobot'
 import TheBadRobot from './components/TheBadRobot'
 import TheUglyRobot from './components/TheUglyRobot'
+import './App.css'
 
 
 
@@ -16,7 +17,7 @@ const App = () => {
 
   return (
     <>
-    <h1>Robo Active Listening</h1>
+    <h1>The Good, The Bad, The Ugly</h1>
     <div>
       <label>Say Something: </label>
       <input value={userInput}
@@ -39,6 +40,7 @@ const App = () => {
       
     <div>
       <label>The Ugly Robot</label>
+      <TheUglyRobot userInput={userInput} />
     </div>
     
     
