@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return (
+            <>
+                <h1>Alpha Cohort 2024</h1>
+                <Classmates />
+                <Footer />
+                
+
+            </>
+                )
+        }
+
+        const Classmates = () => {
+          return ( 
+            <>
+            <ul>
+                <li>Morgan</li>
+                <li>Amir</li>
+                <li>Ryan</li>
+                <li>Matt</li>
+                <li>Louie</li>
+                <li>Seth</li>
+                <li>Shawn</li>
+                <li>Judas</li>
+                <li>Mark</li>
+            </ul>
+            </>
+          )
+        }
+        const Footer = () => {
+        return (
+          <>
+            <footer> Mark Smith </footer>
+           
+          </>
+        )
+      }
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>

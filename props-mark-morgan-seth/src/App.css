@@ -1,0 +1,57 @@
+body {
+  font-family: "Anta", sans-serif;
+  background-image: url("./backrground.webp");
+  color: #fff;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roll-log-parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.num-parent {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+li {
+  list-style: none;
+}
+
+
+button {
+  max-height: 10dvh;
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #80181A;
+}
+
+.roll-title {
+  font-size: 20px;
+}
+
+.dice-img {
+  max-width: 150px;
+  max-height: 150px;
+}
+

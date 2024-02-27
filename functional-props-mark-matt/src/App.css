@@ -1,0 +1,14 @@
+.menu {
+  border: 2px solid black;
+  display: inline-flex;
+  flex-direction: column;
+  
+}
+
+.order {
+  border: 2px solid black;
+  display:inline-flex;
+  flex-direction: column;
+  place-self: space-between ;
+  
+}

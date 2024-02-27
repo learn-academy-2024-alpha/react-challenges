@@ -1,9 +1,11 @@
+
 import Box from "./Box"
-const AddButton = () => {
+
+const AddButton = ({ onClick }) => {
     return (
         <>
-            <button>add box</button>
-  
+            <button onClick={onClick}>add box</button>
+
         </>
     )
 }

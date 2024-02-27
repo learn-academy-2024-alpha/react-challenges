@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('img/mountain.jpg');
+}
+
+h2 {
+  font-size: 5em;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(132, 3, 3), 0 0 20px rgb(100, 2, 2), 0 0 30px rgb(108, 3, 3);
+  /* background-color: blueviolet; */
+}
+
+p {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 15px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+h3, ul {
+  text-align: center;
+}
