@@ -1,3 +1,6 @@
+
+import Box from "./Box"
+
 const RemoveButton = ({ onClick }) => {
     return (
         <>
@@ -7,3 +10,4 @@ const RemoveButton = ({ onClick }) => {
 }
 
 export default RemoveButton
+

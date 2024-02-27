@@ -5,6 +5,12 @@ import { useState } from "react";
 
 const App = () =>{
   const [box, setBox] = useState(0) 
+  const onAdd = () =>{
+    setBox(box + 1)
+  }
+  const onRemove = () =>{
+    setBox(box - 1)
+  }
 
   const handleAdd = () => {
     setBox(box + 1)
@@ -18,11 +24,19 @@ const App = () =>{
 
   return (
     <>
+
+    <AddButton onClick={onAdd}/>
+    <RemoveButton onClick={onRemove}/>
+    {[...Array(box)].map((_, index)=> {
+      <Box key={index}/>
+    })}
+
     <AddButton onClick={handleAdd} />
     <RemoveButton onClick={handleRemove} />
     {[...Array(box)].map((_, index) => (
       <Box key={index} />
     ))}
+
     </>
   )
 }
