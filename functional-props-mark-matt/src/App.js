@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import Menu from './components/Menu'
 import Order from './components/Order'
+import './App.css'
 
 
 const App = () => {
 const [menuItems, setMenuItems] = useState([
-  {item: "Penguin Taco", price:"$1.99", ordered: false},
-  {item: "King Penguin Burrito", price:"$8.99", ordered: false},
-  {item: "Penguin Quesadilla", price:"$6.99", ordered: false},
-  {item: "Penguin Tortas", price:"$10.99", ordered: false},
-  {item: "Penguin Nachos", price:"$12.99", ordered: false},
-  {item: "Happy Feet Horchata", price:"$3.99", ordered: false}
+  {item: "Little Penguin Taco", price:1.99, ordered: false},
+  {item: "King Penguin Burrito", price:8.99, ordered: false},
+  {item: "Macaroni Penguin Quesadilla", price:6.99, ordered: false},
+  {item: "King Penguin Tortas", price:10.99, ordered: false},
+  {item: "Emperor Penguin Nachos", price:12.99, ordered: false},
+  {item: "Happy Feet Horchata", price:3.99, ordered: false}
 ])
 const [orders, setOrders] = useState([])
 
@@ -29,7 +30,7 @@ console.log(orders);
 
   return (
     <>
-    <div>
+    <div className='menu'>
       <h1>Welcome To Taquiera Pingüina</h1>
       <h2>Menu</h2>
      {menuItems.map((item, index)=> {
@@ -41,9 +42,10 @@ console.log(orders);
               />
      )})}
     </div>
-    <div>
+    <div className='order'>
       <h2>Order</h2>
       <Order orders={orders}
+              price={orders.price}
              />
     </div>
     

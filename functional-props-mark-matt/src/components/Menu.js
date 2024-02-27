@@ -12,7 +12,7 @@ orderedItems(index)
     <div>
       <h4>{item}</h4>
       {/* fooditem */}
-      {price}
+      ${price}
       {/* price */}
       </div>
       <div>
