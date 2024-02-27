@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
-import Menu from './Components/Menu'
-import Counter from './Components/Counter'
+import React, { useState } from 'react';
+import Menu from './Components/Menu';
+import Ordered from './Components/Ordered';
+import './App.css';
+
 
 
 const App = () => {
@@ -16,18 +18,43 @@ const App = () => {
     { order: "Bbq chicken plate", price: 14 },
     { order: "Meat Tacos", price: 9 },
     { order: "Burrito", price: 12 },
-
   ])
+  const [orderList, setOrderList] = useState([])
+
+    const addItem = (menuItems) => {
+      setOrderList([...orderList, menuItems])
+    }
+
+    const totalPrice = orderList.reduce((total, item) => total + item.price, 0);
+    const totalSale = (totalPrice * .09) + totalPrice
 
   return (
     <>
-      <h1>React BBQ</h1>
+      <h1 className='header'>React BBQ</h1>
+      <h2 className='sub-header'>Menu</h2>
+      <div className='main'>
       {menuItems.map((menu, index) => {
         return (
-          <Menu menu={menu} key={index}  />
-          
+          <Menu key={index}
+          order={menu.order}
+          price={menu.price}
+          addItem={addItem} />
         )
       })}
+      </div>
+      <div className='ordered'>
+        <h1>Ordered Items</h1>
+  
+        <ul>
+          {orderList.map((item, index) => (
+          <li key={index}>
+            {item.order} - ${item.price}
+          </li>
+          ))}
+        </ul>
+        <p className='total'>Total Price: ${totalSale}</p>
+        </div>
+          <br />
     </>
   )
 }
