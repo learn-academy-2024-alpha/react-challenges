@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import GoodRobot from './Component/GoodRobot';
 import BadRobot from './Component/BadRobot';
+import MissyElliBot from './Component/MissyEllibot';
 
 const App = () => {
   
@@ -20,7 +21,7 @@ const App = () => {
       <input type="text" value={userInput} onChange={handleChange}/>
       <GoodRobot userInput={userInput}/>
       <BadRobot userInput={userInput}/>
-
+      <MissyElliBot userInput={userInput}/>
     </>
   )
 }
