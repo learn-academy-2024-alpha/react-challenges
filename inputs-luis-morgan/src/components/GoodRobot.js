@@ -1,10 +1,14 @@
 import React from 'react'
+import goodrobot from '../images/goodrobot.png'
 
 const GoodRobot = (props) => {
   return (
   <>
-  <h3>GoodRobot</h3>
-    <div>I hear you saying "{props.userInput}". Is that correct?</div>
+  <div className='rob-comp-container'>
+    <h3 style={{ color: "#BCF908", fontSize: 23  }}>GoodRobot</h3>
+      <img className='invisible' src={goodrobot} alt="" />
+      <div className='text invisible'>I hear you saying <br /> "{props.userInput}". Is that correct?</div>
+  </div>
   </>
   )
 }

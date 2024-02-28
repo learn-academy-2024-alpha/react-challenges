@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.invisible {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: linear-gradient(to bottom right, #C0AFF8, #F6CFCA);
+  background-repeat: no-repeat;
+  font-family: "Kode Mono", monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  padding: 40px 190px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  max-height: 20dvh;
+  max-width: 20dvh;
+}
+
+.robot-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rob-comp-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  min-width: 50dvw;
+  min-height: 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: #000 10px 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.sub-wrapper {
+  background-image: linear-gradient(to bottom right, #C0AFF8, #F6CFCA);
+  background-repeat: no-repeat;
+  border: #000 solid 3px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 35px;
+  position: relative;
+  top: 50px;
+  min-height: 67dvh;
+  box-shadow: #000 10px 10px 10px;
+}
+
+h1, h3 {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.text{
+  max-width: 170px;
 }
