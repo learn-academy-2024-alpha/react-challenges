@@ -1,0 +1,52 @@
+* {
+  
+  color: black;
+}
+
+
+.title{
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: bisque;
+
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.background {
+  background-image: url(./images/background.webp);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+
+}
+
+.robots {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: bisque;
+  /* opacity: 0.5; */
+}
+
+input {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 211, 10, 0.8) 0 0 90px 33px;
+}
